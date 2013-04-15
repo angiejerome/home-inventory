@@ -1,6 +1,7 @@
 HomeInventory::Application.routes.draw do
   resources :inventory_items
 
+  root :to => "inventory_items#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
