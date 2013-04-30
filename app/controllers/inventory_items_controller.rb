@@ -3,11 +3,6 @@ class InventoryItemsController < ApplicationController
   # GET /inventory_items.json
   def index
     @inventory_items = InventoryItem.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @inventory_items }
-    end
   end
 
   # GET /inventory_items/1

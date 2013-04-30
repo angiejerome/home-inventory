@@ -15,6 +15,11 @@
   <%= @inventory_item.unit %>
 </p>
 
+<p>
+  <b>Location:</b>
+  <%= @inventory_item.location %>
+</p>
+
 
 <%= link_to 'Edit', edit_inventory_item_path(@inventory_item) %> |
 <%= link_to 'Back', inventory_items_path %>

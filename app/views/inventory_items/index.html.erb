@@ -1,11 +1,11 @@
-<h1>Listing inventory_items</h1>
+<h1>Listing home inventory items</h1>
 
 <table>
   <tr>
     <th>Name</th>
-    <th>Quantity</th>
     <th>Unit</th>
-    <th></th>
+    <th>Quanity</th>
+    <th>Location</th>
     <th></th>
     <th></th>
   </tr>
@@ -13,8 +13,9 @@
 <% @inventory_items.each do |inventory_item| %>
   <tr>
     <td><%= inventory_item.name %></td>
-    <td><%= inventory_item.quantity %></td>
     <td><%= inventory_item.unit %></td>
+    <td><%= inventory_item.quantity %></td>
+    <td><%= inventory_item.location %></td>
     <td><%= link_to 'Show', inventory_item %></td>
     <td><%= link_to 'Edit', edit_inventory_item_path(inventory_item) %></td>
     <td><%= link_to 'Destroy', inventory_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
